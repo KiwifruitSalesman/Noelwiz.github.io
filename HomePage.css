@@ -1,0 +1,94 @@
+body{
+	background-color: #0E0E52;
+}
+
+
+/* main title */
+h1{
+	color:lightblue;
+	font-size:24px;
+	text-align: center;
+	background-color: #150578;
+	word-spacing: 7px;
+	text-shadow: 3px 2px blue;
+}
+
+
+/*section header */
+h2{
+	color: #449DD1;
+	/* ^^^ custom color */
+
+	word-spacing: 4px;
+
+}
+
+/* paragraphy type header thing */
+h3{
+	/* here is hex */
+	color: #449DD1;
+	word-spacing: 2px;
+
+
+
+}
+
+/* normal text */
+p{
+	color: #78C0E0;
+	font-size: 12;
+	margin-left: 25px;
+	text-align: justify;
+	word-spacing: 2px;
+}
+
+/* quotes */
+q{
+	margin-left: 30px;
+	color: #78C0E0;
+	font-size: 14;
+	border-left:5px solid #150578;
+	background-color: #192BC2;
+	word-spacing: 2px;
+
+}
+
+dl{
+	font-size: 20;
+	color: #78C0E0;
+
+}
+
+dt{
+	font-size: 14;
+	word-spacing: 4px;
+	color: #78C0E0;
+}
+
+dd{
+	font-size: 12;
+	word-spacing: 2px;
+	color: #78C0E0;
+}
+
+
+/* Links! */
+a:link{
+	text-decoration: underline;
+
+}
+
+a:visited{
+	text-decoration: underline;
+
+}
+
+a:hover{
+	text-decoration: underline;
+
+
+}
+
+
+a:active{
+	text-decoration: underline;
