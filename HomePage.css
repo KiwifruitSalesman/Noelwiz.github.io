@@ -96,6 +96,28 @@ a:hover{
 
 }
 
-
 a:active{
 	text-decoration: underline;
+
+  /* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #150578;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #449DD1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #192BC2;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #0E0E52;
+  color: black;
+}
