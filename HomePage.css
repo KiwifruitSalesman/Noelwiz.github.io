@@ -1,22 +1,29 @@
+/* colors
+  #0E0E52 = darkest blue
+  #150578 = second darkest blue
+  #192BC2 = medium blue
+  #449DD1 = second lightes blue
+  #78C0E0 = lightest blue
+  ##78d2e0 quote background blue
+*/
+
 body{
-	background-color: #0E0E52;
+	background-color: #78C0E0;
 }
 
 
 /* main title */
 h1{
-	color:lightblue;
+	color:#0E0E52;
 	font-size:24px;
 	text-align: center;
-	background-color: #150578;
 	word-spacing: 7px;
-	text-shadow: 3px 2px blue;
 }
 
 
 /*section header */
 h2{
-	color: #449DD1;
+	color: #150578;
 	/* ^^^ custom color */
 
 	word-spacing: 4px;
@@ -26,7 +33,7 @@ h2{
 /* paragraphy type header thing */
 h3{
 	/* here is hex */
-	color: #449DD1;
+	color: #150578;
 	word-spacing: 2px;
 
 
@@ -35,7 +42,7 @@ h3{
 
 /* normal text */
 p{
-	color: #78C0E0;
+	color: #192BC2;
 	font-size: 12;
 	margin-left: 25px;
 	text-align: justify;
@@ -45,30 +52,30 @@ p{
 /* quotes */
 q{
 	margin-left: 30px;
-	color: #78C0E0;
+	color: #192BC2;
 	font-size: 14;
-	border-left:5px solid #150578;
-	background-color: #192BC2;
+	border-left:5px solid #4ef4e9;
+	background-color: #78d2e0;
 	word-spacing: 2px;
 
 }
 
 dl{
 	font-size: 20;
-	color: #78C0E0;
+	color: #192BC2;
 
 }
 
 dt{
 	font-size: 14;
 	word-spacing: 4px;
-	color: #78C0E0;
+	color: #192BC2;
 }
 
 dd{
 	font-size: 12;
 	word-spacing: 2px;
-	color: #78C0E0;
+	color: #192BC2;
 }
 
 
