@@ -7,6 +7,32 @@
   ##78d2e0 quote background blue
 */
 
+/* The navbar container */
+
+/* Links - change color on hover */
+.topnav a:hover {
+background-color: #449DD1;
+color: black;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #150578;
+}
+
+/* Navbar links */
+.topnav a {
+float: left;
+display: block;
+color: #449DD1;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color: #192BC2;
+}
+
+/*defaults */
+
 body{
 	background-color: #78C0E0;
 }
@@ -79,6 +105,8 @@ dd{
 }
 
 
+
+
 /* Links! */
 a:link{
 	text-decoration: underline;
@@ -98,26 +126,3 @@ a:hover{
 
 a:active{
 	text-decoration: underline;
-
-  /* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: #150578;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #449DD1;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #192BC2;
-}
-
-/* Links - change color on hover */
-.topnav a:hover {
-  background-color: #0E0E52;
-  color: black;
-}
