@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: lightblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: blue;
+}
+
+.column {
+  width: 95%;
+  background: blue;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 95%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}

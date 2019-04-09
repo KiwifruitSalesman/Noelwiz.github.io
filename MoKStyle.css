@@ -1,0 +1,128 @@
+/* colors
+  #0E0E52 = darkest blue
+  #150578 = second darkest blue
+  #192BC2 = medium blue
+  #449DD1 = second lightes blue
+  #78C0E0 = lightest blue
+  ##78d2e0 quote background blue
+*/
+
+/* The navbar container */
+
+/* Links - change color on hover */
+.topnav a:hover {
+background-color: #449DD1;
+color: black;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #150578;
+}
+
+/* Navbar links */
+.topnav a {
+float: left;
+display: block;
+color: #449DD1;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color: #192BC2;
+}
+
+/*defaults */
+
+body{
+	background-color: #78C0E0;
+}
+
+
+/* main title */
+h1{
+	color:#0E0E52;
+	font-size:24px;
+	text-align: center;
+	word-spacing: 7px;
+}
+
+
+/*section header */
+h2{
+	color: #150578;
+	/* ^^^ custom color */
+
+	word-spacing: 4px;
+
+}
+
+/* paragraphy type header thing */
+h3{
+	/* here is hex */
+	color: #150578;
+	word-spacing: 2px;
+
+
+
+}
+
+/* normal text */
+p{
+	color: #192BC2;
+	font-size: 12;
+	margin-left: 25px;
+	text-align: justify;
+	word-spacing: 2px;
+}
+
+/* quotes */
+q{
+	margin-left: 30px;
+	color: #192BC2;
+	font-size: 14;
+	border-left:5px solid #4ef4e9;
+	background-color: #78d2e0;
+	word-spacing: 2px;
+
+}
+
+dl{
+	font-size: 20;
+	color: #192BC2;
+
+}
+
+dt{
+	font-size: 14;
+	word-spacing: 4px;
+	color: #192BC2;
+}
+
+dd{
+	font-size: 12;
+	word-spacing: 2px;
+	color: #192BC2;
+}
+
+
+
+
+/* Links! */
+a:link{
+	text-decoration: underline;
+
+}
+
+a:visited{
+	text-decoration: underline;
+
+}
+
+a:hover{
+	text-decoration: underline;
+
+
+}
+
+a:active{
+	text-decoration: underline;
