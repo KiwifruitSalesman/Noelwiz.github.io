@@ -9,4 +9,4 @@ TODO:
 - [ ] add a page about my game jam games I've worked on, maybe use a drop down menue
 - [ ] add something about my planet generator
 - [ ] add a social media page
--> blog, twitter, maybe reddit, twitch if we change the stream title, youtube
+blog, twitter, maybe reddit, twitch if we change the stream title, youtube
