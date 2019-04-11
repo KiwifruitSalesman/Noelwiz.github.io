@@ -1,6 +1,5 @@
 # Noelwiz.github.io
 TODO:
-- [ ] make the Meme Economy Boy Commands look good 
 - [ ] add images to Mercahnts of klocios, the map and idk
 - [ ] write the blog posts on the merchants of klocios blog 
 - [ ] add a page about my world anvil world
