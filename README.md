@@ -1,6 +1,5 @@
 # Noelwiz.github.io
 TODO:
-- [ ] make a drop down menue for Merchants of Klocios
 - [ ] make the Meme Economy Boy Commands look good 
 - [ ] add images to Mercahnts of klocios, the map and idk
 - [ ] write the blog posts on the merchants of klocios blog 
