@@ -15,8 +15,21 @@
 
       <div class="topnav">
         <a href="/index.html">Home</a>
-        <a href="/MemeEconomyBot.html">Maze Bot</a>
-        <!-- <a href="/Merchants_of_Klocios">Merchants of Klocios</a> -->
+        <div class="topnav-dropdown">
+          <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+              <a href="/MemeEconomyBot.html">Maze Bot</a>
+              <a href="/PlanetGenerator.html">Planet Generator</a>
+            </div>
+        </div>
+        <a href="/Worlds.html">World Building</a>
+        <div class="topnav-dropdown">
+          <button class="dropbtn">Merchants of Klocios</button>
+            <div class="dropdown-content">
+              <a href="/Merchants_of_Klocios">Game Overview</a>
+              <a href="/MoKBlog.html">Dev Blogs</a>
+            </div>
+        </div>
       </div>
 
       <!-- page content -->
@@ -26,12 +39,18 @@
 
       <h2> How do I use this? </h2>
         <h3>Instillation</h3>
-
+          <p>
+            <iframe frameborder="0" src="https://itch.io/embed/218810?linkback=true&amp;bg_color=6aacc4&amp;fg_color=192BC2&amp;link_color=fa5c5c&amp;border_color=0E0E52" width="552" height="167"></iframe>
+            <br>
+            Download the files from Itch.io above. After that, compile them. Then, go do discord and create a bot user
+            for the bot at <a href="https://discordapp.com/developers/applications/">Discord's site</a>. Add the bot to
+            your server, and create a text file in the folder you compiled the bot in called "bottoken.txt" and put your bot token
+            from discord's site into the text file. Finally run the bot. Hopefully you can trouble shoot any errors.
+          </p>
         <h3>Commands</h3>
         <p>
           All commands are triggered with $. If a meme's name has a space, it's tag must be used in any commands. <br>
         </p>
-
         <dl>
           <dt>$initialize</dt> <dd>Intializes the bot for the server, actually entirely unsessicary.</dd>
           <dt>$startround</dt> <dd>Starts a new round of trading.</dd>
