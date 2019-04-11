@@ -102,6 +102,7 @@ body{
 
 /* main title */
 h1{
+	background-color: #449DD1; /* changing color for title background to match header */
 	color:#1B512D;
 	font-size:24px;
 	text-align: center;
