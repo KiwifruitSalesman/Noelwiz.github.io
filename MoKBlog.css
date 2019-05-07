@@ -86,24 +86,27 @@ text-align: center;
 /* Show the dropdown menu on hover */
 .topnav-dropdown:hover .dropdown-content {display: block;}
 
+/* MoK Colors
+#1B512D darkest green
+#1C7C54 2nd darkest green
+
+#B1CF5F yellow green
+
+#73E2A7 light green
+#DEF4C6 white green
+*/
 
 body {
   font-family: Arial;
   padding: 20px;
-  background: lightblue;
+	background-color: #73E2A7;
 }
-
 
 /* Header/Blog Title */
 .header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: blue;
-}
-
-.column {
-  width: 95%;
   background: blue;
 }
 
@@ -116,16 +119,9 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #DEF4C6;
   padding: 20px;
   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
@@ -134,4 +130,18 @@ body {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+}
+
+.card h1{
+  	background-color: #73E2A7;
+    color: #1C7C54;
+}
+
+.card h5{
+  color: #1B512D;
+}
+
+.card p{
+  color: #1C7C54;
+	font-size: 12;
 }

@@ -1,3 +1,110 @@
+/* MoK Colors
+#1B512D darkest green
+#1C7C54 2nd darkest green
+
+#B1CF5F yellow green
+
+#73E2A7 light green
+#DEF4C6 white green
+*/
+
+/*defaults */
+body{
+	background-color: #DEF4C6;
+  padding: 20px;
+}
+
+
+/* main title */
+h1{
+	background-color: #73E2A7; /* changing color for title background to match header */
+	color:#1B512D;
+	font-size:24px;
+	text-align: center;
+	word-spacing: 7px;
+	padding: 5px;
+}
+
+
+/*section header */
+h2{
+	color: #1C7C54;
+	/* ^^^ custom color */
+	background-color: #73E2A7;
+	word-spacing: 4px;
+	padding: 5px;
+}
+
+/* paragraphy type header thing */
+h3{
+	/* here is hex */
+	background-color: #73E2A7;
+	color: #1C7C54;
+	word-spacing: 2px;
+	padding: 5px;
+}
+
+/* normal text */
+p{
+	color: #1C7C54;
+	font-size: 12;
+	margin-left: 25px;
+	word-spacing: 2px;
+}
+
+/* quotes */
+q{
+	margin-left: 30px;
+	color: #192BC2;
+	font-size: 14;
+	border-left:5px solid #4ef4e9;
+	background-color: #78d2e0;
+	word-spacing: 2px;
+
+}
+
+dl{
+	font-size: 14;
+	word-spacing: 4px;
+	color: #1C7C54;
+}
+
+dt{
+	font-size: 20;
+	color: #1C7C54;
+}
+
+dd{
+	font-size: 12;
+	word-spacing: 2px;
+	color: #1C7C54;
+}
+
+ul{
+	font-size: 20;
+	color: #1C7C54;
+}
+
+li{
+	font-size: 14;
+	word-spacing: 4px;
+	color: #1C7C54;
+}
+
+/* Links! */
+a:link{
+	text-decoration: underline;
+	color: #1B512D;
+}
+
+a:active{
+	text-decoration: underline;
+}
+
+
+
+
+
 /* Initally coppied from
  https://www.w3schools.com/css/css_navbar.asp
  https://www.w3schools.com/howto/howto_css_dropdown.asp
@@ -84,104 +191,17 @@ text-align: center;
 /* Show the dropdown menu on hover */
 .topnav-dropdown:hover .dropdown-content {display: block;}
 
-/* MoK Colors
-#1B512D darkest green
-#1C7C54 2nd darkest green
 
-#B1CF5F yellow green
-
-#73E2A7 light green
-#DEF4C6 white green
-*/
-
-/*defaults */
-body{
-	background-color: #DEF4C6;
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: blue;
 }
 
-
-/* main title */
-h1{
-	background-color: #449DD1; /* changing color for title background to match header */
-	color:#1B512D;
-	font-size:24px;
-	text-align: center;
-	word-spacing: 7px;
-	padding: 5px;
+.header h1{
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  background: blue;
 }
-
-
-/*section header */
-h2{
-	color: #1C7C54;
-	/* ^^^ custom color */
-	background-color: #73E2A7;
-	word-spacing: 4px;
-	padding: 5px;
-}
-
-/* paragraphy type header thing */
-h3{
-	/* here is hex */
-	background-color: #73E2A7;
-	color: #1C7C54;
-	word-spacing: 2px;
-	padding: 5px;
-}
-
-/* normal text */
-p{
-	color: #B1CF5F;
-	font-size: 12;
-	margin-left: 25px;
-	text-align: justify;
-	word-spacing: 2px;
-}
-
-/* quotes */
-q{
-	margin-left: 30px;
-	color: #192BC2;
-	font-size: 14;
-	border-left:5px solid #4ef4e9;
-	background-color: #78d2e0;
-	word-spacing: 2px;
-
-}
-
-dl{
-	font-size: 14;
-	word-spacing: 4px;
-	color: #B1CF5F;
-}
-
-dt{
-	font-size: 20;
-	color: #B1CF5F;
-}
-
-dd{
-	font-size: 12;
-	word-spacing: 2px;
-	color: #B1CF5F;
-}
-
-ul{
-	font-size: 20;
-	color: #B1CF5F;
-}
-
-li{
-	font-size: 14;
-	word-spacing: 4px;
-	color: #B1CF5F;
-}
-
-/* Links! */
-a:link{
-	text-decoration: underline;
-	color: #1B512D;
-}
-
-a:active{
-	text-decoration: underline;
