@@ -1,27 +1,26 @@
-/* color pallet
-  #0E0E52 = darkest blue						Title Text
-  #150578 = second darkest blue			h2 and somewhat emphasized text
-  #192BC2 = medium blue							Normal Text color
-  #449DD1 = second lightes blue			Darker Background
-  #78C0E0 = lightest blue						background
-  #78d2e0 quote background blue
-  #6aacc4 dropdown link hover
-*/
-
-
 /* New Color pallet
-   Title Text
-   H2 and emphasized
-   normal Textbackground
-   darker background
+   6E2594     h1, eg page Title
+   086788     h2 page subtitel
+   DE9151     header background
 
-   F06543     Topnav drop down Background
+   F06543     Topnav + drop down Background
+   000100     topnav text
    #f38368    topnav background hover
    FDFFFC     Topnav Text hover
 
+
+   086788     section headers
+   6E2594     Links
+
    000100     normal text
-   F7F4F3     page backgground, topnav text
-   086788     section background
+   F8FFE5     page backgground
+
+   FFDD4A     darker background?
+   ???     section background
+
+   unused: 094074, a darker blue
+   FFDD4A, an orangeish yellow
+   FE9000, a lighter dark orange
 */
 
 /* Initally coppied from
@@ -30,17 +29,82 @@
  https://www.w3schools.com/css/css_dropdowns.asp
  then modified and stuff */
 
+ /* Main Page formatting, by me */
+ body{
+ 	background-color: #F8FFE5;
+ }
+
+ /* normal text */
+ p{
+ 	color: #000100;
+ 	font-size: 12;
+ 	margin-left: 25px;
+ 	text-align: justify;
+ 	word-spacing: 2px;
+ }
+
+ /* Links! */
+ a:link{
+ 	text-decoration: underline;
+   color: #086788;
+ }
+
+ a:hover{
+
+ }
+
+ /* main title */
+ h3{
+   word-spacing: 4px;
+   color: #086788;
+ }
+
+ /* paragraphy type header thing */
+ h4{
+ 	/* here is hex */
+ 	color: #086788;
+ 	word-spacing: 2px;
+ }
+
+
+ /* quotes */
+ q{
+ 	margin-left: 30px;
+ 	color: #086788;
+ 	font-size: 14;
+ 	border-left:5px solid #4ef4e9;
+ 	background-color: #78d2e0;
+ 	word-spacing: 2px;
+ }
+
+ dl{
+ 	color: #192BC2;
+   margin-left: 30px;
+ }
+
+ dt{
+   font-weight: bold;
+ 	font-size: 14;
+ 	word-spacing: 4px;
+ 	color: #192BC2;
+ }
+
+ dd{
+ 	font-size: 12;
+ 	word-spacing: 2px;
+ 	color: #192BC2;
+ }
 
 
  .topnav {
  overflow: hidden;
- background-color: #150578;
+ background-color: #F06543;
  }
 
  /* Links - change color on hover */
  .topnav-dropdown:hover , .topnav a:hover {
- background-color: #449DD1;
- color: #150578;
+ background-color: #f38368;
+ color: #000100;
  }
 
 
@@ -49,7 +113,7 @@
  .topnav > a {
  float: left;
  background-color: inherit;
- color: #449DD1;
+ color: #000100;
  text-align: center;
  padding: 12px 16px;
  text-decoration: underline;
@@ -60,7 +124,7 @@
  whats hovered over when you want to see the menu */
  .dropbtn {
    background-color: inherit;
-   color: #449DD1; /*  color: #150578;  */
+   color: #000100; /*  color: #150578;  */
    padding: 12px 16px;
    font-size: 16px;
    text-decoration: underline;
@@ -81,15 +145,15 @@
    float: none;
    display: none;
    position: absolute;
-   background-color: #449DD1;
+   background-color: #F06543;
    min-width: 160px;
    z-index: 1;
  }
 
  /* Links inside the dropdown */
  .dropdown-content a {
-   background-color: #449DD1;
-   color: #150578;
+   background-color: #F06543;
+   color: #000100;
    padding: 12px 16px;
    text-decoration: underline;
    display: block;
@@ -98,110 +162,47 @@
  /* Change the background color of the dropdown button when the dropdown content is shown */
  /* colors the actual text you hover over to see the drop down */
  .topnav-dropdown:hover .dropbtn {
-   background-color: #449DD1;
-   color: #150578;
+   background-color: #f38368;
+   color: #000100;
  }
 
  /* Change color of dropdown links on hover */
- .dropdown-content a:hover {background-color: #449DD1; color: #150578;}
- .dropdown-content a:hover {
-   background-color: #6aacc4;
- }
+ .dropdown-content a:hover {background-color: #f38368; color: #000100;}
 
  /* Show the dropdown menu on hover */
  .topnav-dropdown:hover .dropdown-content {display: block;}
 
 
-
-
-/* Main Page formatting, by me */
-body{
-	background-color: #086788;
-}
-
-/* normal text */
-p{
-	color: #000100;
-	font-size: 12;
-	margin-left: 25px;
-	text-align: justify;
-	word-spacing: 2px;
-}
+ .footer{
+   position: fixed;
+   bottom: 6px;
+   left: 5%;
+   z-index: 1;
+   width: 90%;
+   background-color: #f38368;
+ }
 
 /* main title */
 h1{
-	color:#0E0E52;
+  padding-top: 6px;
+	color:#6E2594;
 	font-size:24px;
 	text-align: center;
 	word-spacing: 7px;
 }
 
 
-/*section header */
+/*Subtitle header */
 h2{
-	color: #150578;
-	/* ^^^ custom color */
-
+	color: #086788;
+  font-size:18px;
+  text-align: center;
 	word-spacing: 4px;
 
 }
 
-/* paragraphy type header thing */
-h3{
-	/* here is hex */
-	color: #150578;
-	word-spacing: 2px;
-}
-
-
-
-/* quotes */
-q{
-	margin-left: 30px;
-	color: #192BC2;
-	font-size: 14;
-	border-left:5px solid #4ef4e9;
-	background-color: #78d2e0;
-	word-spacing: 2px;
-}
-
-dl{
-	color: #192BC2;
-  margin-left: 30px;
-}
-
-dt{
-  font-weight: bold;
-	font-size: 14;
-	word-spacing: 4px;
-	color: #192BC2;
-}
-
-dd{
-	font-size: 12;
-	word-spacing: 2px;
-	color: #192BC2;
-}
-
-
-/* Links! */
-a:link{
-	text-decoration: underline;
-
-}
-
-a:visited{
-
-}
-
-a:hover{
-
-}
-
-a:active{
-	text-decoration: underline;
-
-header{
+.header{
   background-color: #DE9151;
-  font-size: 24;
+  border-style: groove;
+  border-color: #FE9000;
 }

@@ -118,23 +118,26 @@ background-color: #150578;
 font-size: 16px;
 }
 
-/* Links - change color on hover */
-.topnav-dropdown:hover , .topnav a:hover {
-background-color: #449DD1;
-color: #150578;
+.topnav {
+overflow: hidden;
+background-color: #F06543;
 }
 
- /* Change color of dropdown links on hover */
- .dropdown-content a:hover {background-color: #449DD1; color: #150578;}
+/* Links - change color on hover */
+.topnav-dropdown:hover , .topnav a:hover {
+background-color: #f38368;
+color: #000100;
+}
+
+
 
 /* Navbar links */
 .topnav > a {
 float: left;
-display: block;
 background-color: inherit;
-color: #449DD1;
+color: #000100;
 text-align: center;
-padding: 14px 16px;
+padding: 12px 16px;
 text-decoration: underline;
 font-size: 16px;
 }
@@ -142,13 +145,13 @@ font-size: 16px;
 /* Dropdown down menue -
 whats hovered over when you want to see the menu */
 .dropbtn {
-  background-color: inherit;
-  color: #449DD1; /*  color: #150578;  */
-  padding: 12px 16px;
-  font-size: 16px;
-  text-decoration: underline;
+	background-color: inherit;
+	color: #000100; /*  color: #150578;  */
+	padding: 12px 16px;
+	font-size: 16px;
+	text-decoration: underline;
 
-  border-style: none; /* so there's no weird 3d thing */
+	border-style: none; /* so there's no weird 3d thing */
 }
 
 /*dropdown on the top nav
@@ -161,36 +164,35 @@ text-align: center;
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  float: none;
-  display: none;
-  position: absolute;
-  background-color: #449DD1;
-  min-width: 160px;
-  z-index: 1;
+	float: none;
+	display: none;
+	position: absolute;
+	background-color: #F06543;
+	min-width: 160px;
+	z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  background-color: #449DD1;
-  color: #150578;
-  padding: 12px 16px;
-  text-decoration: underline;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #6aacc4;
+	background-color: #F06543;
+	color: #000100;
+	padding: 12px 16px;
+	text-decoration: underline;
+	display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* colors the actual text you hover over to see the drop down */
 .topnav-dropdown:hover .dropbtn {
-  background-color: #449DD1;
-  color: #150578;
+	background-color: #f38368;
+	color: #000100;
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f38368; color: #000100;}
+
 /* Show the dropdown menu on hover */
 .topnav-dropdown:hover .dropdown-content {display: block;}
-
 
 .header {
   padding: 30px;
