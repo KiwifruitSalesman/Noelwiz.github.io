@@ -140,3 +140,30 @@ body {
   color: #1C7C54;
 	font-size: 12;
 }
+
+/* main title */
+.header > h1{
+  padding-top: 6px;
+	color:#6E2594;
+	font-size:24px;
+	text-align: center;
+	word-spacing: 7px;
+		background-color: inherit;
+}
+
+
+/*Subtitle header */
+.header > h2 {
+	color: #086788;
+  font-size:18px;
+  text-align: center;
+	word-spacing: 4px;
+	background-color: inherit;
+
+}
+
+.header{
+  background-color: #DE9151;
+  border-style: groove;
+  border-color: #FE9000;
+}
