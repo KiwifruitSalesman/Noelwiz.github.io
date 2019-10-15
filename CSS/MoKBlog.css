@@ -9,7 +9,6 @@
 .topnav {
 overflow: hidden;
 background-color: #150578;
-font-size: 16px;
 }
 
 /* Links - change color on hover */
@@ -18,17 +17,15 @@ background-color: #449DD1;
 color: #150578;
 }
 
- /* Change color of dropdown links on hover */
- .dropdown-content a:hover {background-color: #449DD1; color: #150578;}
+
 
 /* Navbar links */
 .topnav > a {
 float: left;
-display: block;
 background-color: inherit;
 color: #449DD1;
 text-align: center;
-padding: 14px 16px;
+padding: 12px 16px;
 text-decoration: underline;
 font-size: 16px;
 }
@@ -79,6 +76,8 @@ text-align: center;
   color: #150578;
 }
 
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #449DD1; color: #150578;}
 .dropdown-content a:hover {
   background-color: #6aacc4;
 }
