@@ -23,13 +23,14 @@
    FE9000, a lighter dark orange
 */
 
-/* Initally coppied from
- https://www.w3schools.com/css/css_navbar.asp
- https://www.w3schools.com/howto/howto_css_dropdown.asp
- https://www.w3schools.com/css/css_dropdowns.asp
- then modified and stuff */
-
  /* Main Page formatting, by me */
+
+ .inline-block {
+    display: inline-block;
+ }
+
+
+
  body{
  	background-color: #F8FFE5;
  }
@@ -37,7 +38,7 @@
  /* normal text */
  p{
  	color: #000100;
- 	font-size: 12;
+ 	font-size: 16px;
  	margin-left: 25px;
  	text-align: justify;
  	word-spacing: 2px;
@@ -96,82 +97,8 @@
  }
 
 
- .topnav {
- overflow: hidden;
- background-color: #F06543;
- }
 
- /* Links - change color on hover */
- .topnav-dropdown:hover , .topnav a:hover {
- background-color: #f38368;
- color: #000100;
- }
-
-
-
- /* Navbar links */
- .topnav > a {
- float: left;
- background-color: inherit;
- color: #000100;
- text-align: center;
- padding: 12px 16px;
- text-decoration: underline;
- font-size: 16px;
- }
-
- /* Dropdown down menue -
- whats hovered over when you want to see the menu */
- .dropbtn {
-   background-color: inherit;
-   color: #000100; /*  color: #150578;  */
-   padding: 12px 16px;
-   font-size: 16px;
-   text-decoration: underline;
-
-   border-style: none; /* so there's no weird 3d thing */
- }
-
- /*dropdown on the top nav
- change it's properties related to the nav bar here*/
- .topnav-dropdown {
- float: left;
- display: block;
- text-align: center;
- }
-
- /* Dropdown Content (Hidden by Default) */
- .dropdown-content {
-   float: none;
-   display: none;
-   position: absolute;
-   background-color: #F06543;
-   min-width: 160px;
-   z-index: 1;
- }
-
- /* Links inside the dropdown */
- .dropdown-content a {
-   background-color: #F06543;
-   color: #000100;
-   padding: 12px 16px;
-   text-decoration: underline;
-   display: block;
- }
-
- /* Change the background color of the dropdown button when the dropdown content is shown */
- /* colors the actual text you hover over to see the drop down */
- .topnav-dropdown:hover .dropbtn {
-   background-color: #f38368;
-   color: #000100;
- }
-
- /* Change color of dropdown links on hover */
- .dropdown-content a:hover {background-color: #f38368; color: #000100;}
-
- /* Show the dropdown menu on hover */
- .topnav-dropdown:hover .dropdown-content {display: block;}
-
+  /*@import "CSS/DropDown.css"; */
 
  .footer{
    position: fixed;
@@ -205,4 +132,17 @@ h2{
   background-color: #DE9151;
   border-style: groove;
   border-color: #FE9000;
+}
+
+
+
+table {
+  padding: 8px 8px;
+  margin: auto;
+}
+
+th {
+  padding: 4px 4px;
+  border-style: solid;
+  border: 1px solid black;
 }

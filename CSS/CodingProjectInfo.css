@@ -1,0 +1,119 @@
+
+
+/* .ProjectList ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+
+
+
+.ProjectList{
+  float:left;
+}
+
+
+.CodingProject {
+  overflow-x: auto;
+  overflow-y: scroll;
+  word-wrap: normal;
+  background-color: inherit;
+  min-height: 500;
+  width: 48%;
+  min-width: inherit;
+  padding: 5px 5px;
+  display:inline-block;
+  border-style: solid;
+  border:  1px solid #ddd;
+  vertical-align: top;
+}
+
+
+.CodingProject h1 {
+  /* title txt */
+  text-align: center;
+  font-size: 28px;
+  color: inherit;
+}
+
+.CodingProject img {
+  /* title image */
+  width: 63.5%;
+  height: 235px;
+  border: 1px solid #ddd;
+  padding: 0px 0px;
+  float: right;
+}
+
+.CodingProject p {
+  /* paragraph */
+  padding: 4px 4px;
+  text-align: left;
+  margin-left: 2px;
+
+}
+
+.CodingProject article {
+  /* article, main text */
+
+}
+
+.CodingProject a {
+  /* links */
+
+}
+
+.MoreInfo {
+
+}
+
+.MoreInfo a {
+
+}
+
+.CodingProjectInfo{
+  width: min-content;
+  height: 100%;
+
+  word-spacing:normal;
+  border-style: double;
+  float: left;
+}
+
+/* - - - Quick Facts Table - - -*/
+.CodingProjectInfo table{
+  /* info table */
+  padding: 0px 2px;
+}
+
+.CodingProjectInfo tr{
+  /* table col */
+
+
+}
+
+.CodingProjectInfo th{
+  /* table row */
+  padding: unset;
+  border-style: unset;
+  border: unset;
+
+  font-size: unset;
+  border-bottom-style: solid;
+  border-bottom: 1px solid black;
+
+
+}
+
+.CodingProjectInfo h1{
+  /* table title */
+  font-size: x-large;
+  color:inherit;
+  text-align: center;
+  border-bottom-style: inherit;
+  display: inline;
+  padding: 0px 0px;
+
+}
