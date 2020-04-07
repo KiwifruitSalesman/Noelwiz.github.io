@@ -13,6 +13,7 @@ TODO:
 - [ ] fill in pages for game jam games
  - - gender Constructor
  - - clockwork Mansion
+ - - Skyrhyms a rap battle rpg
  - - Neon Racing Game
 - [ ] make pages for class work we've done
 - [ ] make a page for the Game Programming Class Game
@@ -25,4 +26,4 @@ TODO:
 - [ ] all games summary page
 - [ ] write more and fill out the pages.
 - - home page
-- [ ] make and or add game design docs 
+- [ ] make and or add game design docs
