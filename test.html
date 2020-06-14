@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./JS/Libraries/isotope.pkgd.js"></script>
+    <!-- swap out local/online source of packages
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    -->
+    <script src="./JS/teststuff.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="CSS/test.css">
+
+
+    <title>Test Page</title>
+  </head>
+  <body>
+
+    <div class="button-group filter-button-group">
+      <!-- <button data-filter=".class_name .class_name_2>button label</button>"-->
+      <button class="button is-checked" data-filter="*">show all</button>
+      <button class="button" data-filter=".blor">blors</button>
+      <button class="button" data-filter=".snar">snar</button>
+      <button class="button" data-filter=":not(.blor)">not blors</button>
+      <button class="button" data-filter="dateAfter2020L">date</button>
+    </div>
+
+    <div class="grid">
+      <!-- date=year month day, so yyyymmdd -->
+      <div class="grid-item blor"><p class="date">20200101</p> blorgle?</div>
+      <div class="grid-item grid-item--width2 blor"><p class="date">20200614</p>blargle</div>
+      <div class="grid-item snar"><p class="date">2018025</p>snargle</div>
+      <div class="grid-item snar"><p class="date">20190101</p>snarglac</div>
+      <div class="grid-item horb"><p class="date">20200106</p>horby</div>
+    </div>
+
+  </body>
+</html>

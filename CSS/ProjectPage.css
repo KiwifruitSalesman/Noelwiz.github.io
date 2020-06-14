@@ -1,0 +1,122 @@
+
+
+/* .ProjectList ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+.column-table {
+  float: left;
+  width: 20%;
+}
+
+.column-image {
+  width: 80%;
+  vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.ProjectList{
+  float:left;
+}
+
+
+body{
+  word-wrap: normal;
+  padding: 5px 5px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+
+.h1 {
+  /* title txt */
+  text-align: center;
+  font-size: 28px;
+  color: inherit;
+}
+
+img {
+  /* title image */
+  border: 1px solid #ddd;
+  padding: 1px 1px;
+}
+
+p {
+  /* paragraph */
+
+
+}
+
+article {
+  /* article, main text */
+  padding: 4px 4px;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.a {
+  /* links */
+
+}
+
+.MoreInfo {
+
+}
+
+.MoreInfo a {
+
+}
+
+.CodingProjectInfo{
+  width: min-content;
+  height: 100%;
+  word-spacing:normal;
+  border-style: double;
+  float: left;
+}
+
+/* - - - Quick Facts Table - - -*/
+.CodingProjectInfo table{
+  /* info table */
+  padding: 0px 2px;
+}
+
+.CodingProjectInfo tr{
+  /* table col */
+
+
+}
+
+.CodingProjectInfo th{
+  /* table row */
+  padding: unset;
+  border-style: unset;
+  border: unset;
+
+  font-size: unset;
+  border-bottom-style: solid;
+  border-bottom: 1px solid black;
+
+
+}
+
+.CodingProjectInfo h1{
+  /* table title */
+  font-size: x-large;
+  color:inherit;
+  text-align: center;
+  border-bottom-style: inherit;
+  display: inline;
+  padding: 0px 0px;
+
+}
