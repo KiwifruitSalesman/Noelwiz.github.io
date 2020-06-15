@@ -35,6 +35,48 @@
       <div class="grid-item snar"><p class="date">20190101</p>snarglac</div>
       <div class="grid-item horb"><p class="date">20200106</p>horby</div>
     </div>
+
+
+
+    <div class="filters">
+      <div class="ui-group">
+        <h3>School or Personal</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="color">
+          <button class="button is-checked" data-filter="">All</button>
+          <button class="button" data-filter=".school">School</button>
+          <button class="button" data-filter=".personal">Personal</button>
+          <!--<button class="button" data-filter=".work">yellow</button> -->
+        </div>
+      </div>
+
+      <div class="ui-group">
+        <h3>Coding?</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="size">
+          <button class="button is-checked" data-filter="">Both</button>
+          <button class="button" data-filter=".coding">Coding</button>
+          <button class="button" data-filter=":not(.coding)">Not Coding</button>
+        </div>
+      </div>
+
+      <div class="ui-group">
+        <h3>Format</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="shape">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".game">game</button>
+          <button class="button" data-filter=".music">music</button>
+          <button class="button" data-filter=".writing">writing</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <!-- date=year month day, so yyyymmdd -->
+      <div class="grid-item game school coding"><p class="date">20200101</p> june gloom</div>
+      <div class="grid-item grid-item--width2 game personal coding"><p class="date">20200614</p> merchants</div>
+      <div class="grid-item game personal coding"><p class="date">2018025</p> meme bot</div>
+      <div class="grid-item writing school"><p class="date">20190101</p> gender construction</div>
+      <div class="grid-item music school"><p class="date"> june gloom soundtrack</p>horby</div>
+    </div>
   </body>
   <script src="./JS/teststuff.js"></script>
 

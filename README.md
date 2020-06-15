@@ -6,7 +6,8 @@ TODO:
 - [ ] add music to the nav bar.
 - [x] add a page about my game jam games I've worked on, maybe use a drop down menue
 - [x] add a social media page (blog, twitter, maybe reddit, twitch if we change the stream title, youtube)
-- [ ] find social media icons and put those in
+- [x] find social media icons and put those in
+- [x] itch.io icon and put that in
 - [ ] add footer to pages
 - [x] fix the nav bar
 - [ ] maybe Make that window effect where you scroll down then it scrolls with you
