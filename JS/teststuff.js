@@ -1,7 +1,3 @@
-
-test = "test str"
-
-
 var $grid = $('.grid').isotope({
   // options
   itemSelector: '.grid-item',
@@ -35,7 +31,6 @@ $(document).ready(function(){
   });
   */
 
- console.log(test)
  $('.grid').isotope({
    // options
    itemSelector: '.grid-item',
@@ -44,7 +39,7 @@ $(document).ready(function(){
 
  // bind filter button click
  $('.filter-button-group').on( 'click', 'button', function() {
-   console.log("click");
+
    var filterValue = $( this ).attr('data-filter');
    // use filterFn if matches value
    filterValue = filterFns[ filterValue ] || filterValue;
@@ -55,6 +50,7 @@ $(document).ready(function(){
  $('.button-group').each( function( i, buttonGroup ) {
    var $buttonGroup = $( buttonGroup );
    $buttonGroup.on( 'click', 'button', function() {
+     console.log("click");
      $buttonGroup.find('.is-checked').removeClass('is-checked');
      $( this ).addClass('is-checked');
    });
