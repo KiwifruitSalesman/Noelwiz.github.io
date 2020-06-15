@@ -9,7 +9,14 @@ var $grid = $('.grid').isotope({
 var $multigrid = $('.grid2').isotope({
   // options
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+
+  getSortData: {
+    date: function( itemElem ) {
+      var date = $( itemElem ).find('.date').text();
+      return parseInt(date)
+    }
+  }
 });
 
 
@@ -100,4 +107,10 @@ $(document).ready(function(){
      $( this ).addClass('is-checked');
    });
  });
+
+ //sort by date
+ $multigrid.isotope({
+  sortBy: 'date',
+  sortAscending: false
+  });
 });
