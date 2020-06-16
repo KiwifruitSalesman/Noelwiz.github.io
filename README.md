@@ -5,7 +5,7 @@ TODO:
 - [x] add a page about my music (maybe add scores too!)
 - [ ] add music to the nav bar.
 - [x] add a page about my game jam games I've worked on, maybe use a drop down menue
-- [x] add a social media page (blog, twitter, maybe reddit, twitch if we change the stream title, youtube)
+- [x] add a social media page (blog, twitter, maybe reddit, twitch if we change the stream title, YouTube)
 - [x] find social media icons and put those in
 - [x] itch.io icon and put that in
 - [ ] add footer to pages
@@ -14,16 +14,16 @@ TODO:
 - [ ] fill in pages for game jam games
  - - gender Constructor
  - - clockwork Mansion
- - - Skyrhyms a rap battle rpg
+ - - Skyrhymes a rap battle rpg
  - - Neon Racing Game
 - [ ] make pages for class work we've done
 - [ ] make a page for the Game Programming Class Game
 - [ ] add a page about Fantaskic
 - [ ] page about senior project
-- [ ] photo gallary for game pages
+- [ ] photo galleries for game pages
 - [ ] js to make articles on projects look better
 - [ ] js to allow sorting by a few fields for some pages
-- [ ] js to filter games so I only need one page for all the games catagories.
+- [x] js to filter games so I only need one page for all the games categories.
 - [ ] all games summary page
 - [ ] write more and fill out the pages.
 - - home page
