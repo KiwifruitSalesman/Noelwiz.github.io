@@ -8,6 +8,8 @@
 .topnav {
 overflow: hidden;
 background-color: #F06543;
+position: -webkit-sticky; /* Safari */
+position: sticky;
 }
 
 /* Links - change color on hover */

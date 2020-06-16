@@ -1,3 +1,80 @@
+.grid{
+  width: 100%
+  height: 80%
+}
+
+.row1{
+  display: flex;
+}
+
+.info-table{
+  left: 1%;
+  margin: 0px 0px 0px 1%;
+  width: min-content;
+  display: grid;
+}
+
+.info-table h1{
+  /* table title */
+  font-size: x-large;
+  color:inherit;
+  text-align: center;
+  border-bottom-style: inherit;
+  display: inline;
+  padding: 0px 0px;
+}
+
+.info-table table{
+  border-style: double;
+  padding: 0px 2px;
+}
+
+.project img {
+ position: unset;
+ width: 60%;
+ height: auto;
+ /* title image */
+ border: 2px solid #ddd;
+ margin: 1% 1%;
+ display: inline-block;
+}
+
+
+.grid-item{
+  border-style: solid;
+  border-color: #123455;
+  height: 60%;
+  width: 35%;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.project-links {
+  height: max-content;
+  display: flex;
+  margin-bottom: 1%
+}
+
+.grid-item a:link {
+  float: auto;
+  vertical-align: center;
+  border-style: solid;
+  border-color: #636343;
+  width: max-content;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 12px 16px;
+}
+
+.grid-item button{
+  float: none;
+  vertical-align: baseline;
+  display: inline;
+}
+
 
 
 /* .ProjectList ul {
@@ -9,13 +86,8 @@
 
 .column-table {
   float: left;
-  width: 20%;
 }
 
-.column-image {
-  width: 80%;
-  vertical-align: middle;
-}
 
 /* Clear floats after the columns */
 .row:after {
@@ -24,10 +96,6 @@
   clear: both;
 }
 
-
-.ProjectList{
-  float:left;
-}
 
 
 body{
@@ -45,11 +113,6 @@ body{
   color: inherit;
 }
 
-img {
-  /* title image */
-  border: 1px solid #ddd;
-  padding: 1px 1px;
-}
 
 p {
   /* paragraph */
@@ -77,23 +140,13 @@ article {
 
 }
 
-.CodingProjectInfo{
-  width: min-content;
-  height: 100%;
-  word-spacing:normal;
-  border-style: double;
-  float: left;
-}
+
 
 /* - - - Quick Facts Table - - -*/
-.CodingProjectInfo table{
-  /* info table */
-  padding: 0px 2px;
-}
+
 
 .CodingProjectInfo tr{
   /* table col */
-
 
 }
 
@@ -106,17 +159,4 @@ article {
   font-size: unset;
   border-bottom-style: solid;
   border-bottom: 1px solid black;
-
-
-}
-
-.CodingProjectInfo h1{
-  /* table title */
-  font-size: x-large;
-  color:inherit;
-  text-align: center;
-  border-bottom-style: inherit;
-  display: inline;
-  padding: 0px 0px;
-
 }
