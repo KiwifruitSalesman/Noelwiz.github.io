@@ -3,17 +3,20 @@
 var $grid = $('.grid').isotope({
   // options
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
+  display: 'contents',
+  width: '60%',
+  height: 'auto',
+  sortBy: ['datecreate', 'dateworked'],
+  sortAscending: false,
 
-var $multigrid = $('.grid2').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-
+  //TODO: adjust
   getSortData: {
-    date: function( itemElem ) {
-      var date = $( itemElem ).find('.date').text();
+    datecreate: function( itemElem ) {
+      var date = $( itemElem ).find('.hidden').find('.date-started').text();
+      return parseInt(date)
+    },
+    dateworked: function( itemElem ) {
+      var date = $( itemElem ).find('.hidden').find('.date-worked').text();
       return parseInt(date)
     }
   }
@@ -21,16 +24,10 @@ var $multigrid = $('.grid2').isotope({
 
 
 
+
 //copied from isotop demo, https://codepen.io/desandro/pen/Ehgij
 // filter functions
 var filterFns = {
-  //appears to act like a list.
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-
   dateAfter2020L: function() {
     var date = $(this).find('.date').text();
     //filter out everything before 2020
@@ -55,7 +52,7 @@ $('.filters').on( 'click', '.button', function( event ) {
   // combine filters
   var filterValue = concatValues( filters );
   // set filter for Isotope
-  $multigrid.isotope({ filter: filterValue });
+  $grid.isotope({ filter: filterValue });
 });
 
 // change is-checked class on buttons
@@ -75,7 +72,7 @@ function concatValues( obj ) {
     value += obj[ prop ];
   }
   return value;
-}
+};
 
 
 
@@ -83,12 +80,6 @@ function concatValues( obj ) {
 
 //this gets called when the document is ready, so loaded
 $(document).ready(function(){
-  /* //can adjust a class's css with this
-  $('.your-class').slick({
-    width: '75%'
-  });
-  */
-
  // bind filter button click
  $('.filter-button-group').on( 'click', 'button', function() {
 
@@ -106,11 +97,7 @@ $(document).ready(function(){
      $buttonGroup.find('.is-checked').removeClass('is-checked');
      $( this ).addClass('is-checked');
    });
- });
+   });
 
- //sort by date
- $multigrid.isotope({
-  sortBy: 'date',
-  sortAscending: false
-  });
-});
+   $('.grid').height = 'auto';
+ });

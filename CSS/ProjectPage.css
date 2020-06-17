@@ -1,6 +1,8 @@
 .grid{
   width: 100%
   height: 80%
+  display: contents;
+  height: auto;
 }
 
 .row1{
@@ -29,13 +31,15 @@
   padding: 0px 2px;
 }
 
-.project img {
+.grid-item img {
+  display: contents;
  position: unset;
  width: 60%;
  height: auto;
+ vertical-align: bottom;
  /* title image */
  border: 2px solid #ddd;
- margin: 1% 1%;
+ margin: 0% 1%;
  display: inline-block;
 }
 
@@ -45,6 +49,7 @@
   border-color: #123455;
   height: 60%;
   width: 35%;
+  display: contents;
 }
 
 .hidden{
@@ -55,8 +60,14 @@
 .project-links {
   height: max-content;
   display: flex;
-  margin-bottom: 1%
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
+
+.no-image.project-discription p {
+  padding: 1% 1%;
+}
+
 
 .grid-item a:link {
   float: auto;
@@ -69,20 +80,25 @@
   padding: 12px 16px;
 }
 
+a.table-link:link {
+  border: none;
+  padding: inherit;
+  margin: inherit;
+}
+
+p.project-discription > a:link{
+  border:none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+
 .grid-item button{
   float: none;
   vertical-align: baseline;
   display: inline;
 }
 
-
-
-/* .ProjectList ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-} */
 
 .column-table {
   float: left;
@@ -97,6 +113,20 @@
 }
 
 
+.h1 {
+  /* title txt */
+  text-align: center;
+  font-size: 28px;
+  color: inherit;
+}
+
+.project-discription > *, .project-discription, article {
+  /* article, main text */
+  padding-left: 8px
+  text-align: left;
+  margin-left: 2px;
+}
+
 
 body{
   word-wrap: normal;
@@ -106,57 +136,6 @@ body{
 }
 
 
-.h1 {
-  /* title txt */
-  text-align: center;
-  font-size: 28px;
-  color: inherit;
-}
-
-
-p {
-  /* paragraph */
-
-
-}
-
-article {
-  /* article, main text */
-  padding: 4px 4px;
-  text-align: left;
-  margin-left: 2px;
-}
-
-.a {
-  /* links */
-
-}
-
-.MoreInfo {
-
-}
-
-.MoreInfo a {
-
-}
-
-
-
-/* - - - Quick Facts Table - - -*/
-
-
-.CodingProjectInfo tr{
-  /* table col */
-
-}
-
-.CodingProjectInfo th{
-  /* table row */
-  padding: unset;
-  border-style: unset;
-  border: unset;
-
-  font-size: unset;
-  border-bottom-style: solid;
-  border-bottom: 1px solid black;
+.is-checked{
+  background-color: #906865;
 }

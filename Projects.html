@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="CSS/CodingProjectInfo.css">
     <link rel="stylesheet" href="CSS/Footer.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./JS/Libraries/isotope.pkgd.js"></script>
+
 		<title>Projects</title>
 	</head>
 
@@ -73,21 +76,150 @@
       </div>
     <!-- page content -->
     <h1>Filters</h1>
+    <div class="filters">
+      <div class="ui-group">
+        <h3>School or Personal</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="motivator">
+          <button class="button is-checked" data-filter="">All</button>
+          <button class="button" data-filter=".school">School</button>
+          <button class="button" data-filter=".personal">Personal</button>
+          <!--<button class="button" data-filter=".work">yellow</button> -->
+        </div>
+      </div>
 
+      <div class="ui-group">
+        <h3>Coding?</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
+          <button class="button is-checked" data-filter="">Both</button>
+          <button class="button" data-filter=".coding">Coding</button>
+          <button class="button" data-filter=":not(.coding)">Not Coding</button>
+        </div>
+      </div>
+      <div class="ui-group">
+        <h3>Finished?</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".finished">Finished</button>
+          <button class="button" data-filter=".unfinished">Unfinished</button>
+        </div>
+      </div>
+      <div class="ui-group">
+        <h3>Type</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".game">game</button>
+          <button class="button" data-filter=".music">music</button>
+          <button class="button" data-filter=".writing">writing</button>
+        </div>
+      </div>
+      <div class="ui-group">
+        <h3>Language</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".lua">LUA</button>
+          <button class="button" data-filter=".csharp">C#</button>
+          <button class="button" data-filter=".java">Java</button>
+          <button class="button" data-filter=".python">Python</button>
+        </div>
+      </div>
+      <div class="ui-group">
+        <h3># of Ds</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".3d">3D</button>
+          <button class="button" data-filter=".2d">2D</button>
+          <button class="button" data-filter=".text-based">Text Based</button>
+        </div>
+      </div>
+    </div>
 
     <h1>Projects</h1>
     <div class="grid">
-      <div class="grid-item project C# Unity released ">
+      <!-- grid-item, [personal or schoool],[finished or unfinished],  [coding project, world, music, ect], ... -->
+      <!-- coding: [language], [githubg or ____], [game or tool] -->
+      <!-- game: [game-jam or ____], engine, [2d/3d/text based], [single or multiplayer] [released or unreleased]-->
+      <!-- CLOCKWORK MANSION -->
+      <div class="grid-item personal finished   coding  lua    game        digital  game-jam love2d 2d singleplayer released">
         <!-- hidden parts, for computer -->
         <div class="hidden">
           <!-- date=year month day, so yyyymmdd -->
-          <p class="date-started">20200101</p>
-          <p class="date-worked">20200101</p>
+          <p class="date-started">20200307</p>
+          <p class="date-worked">20200309</p>
+          <p class="team-size">5</p>
+        </div>
+        <!-- end hidden -->
+
+        <h1>Clockwork Mansion</h1>
+
+        <!-- table of quick facts -->
+        <span class="row1">
+          <div class="info-table">
+            <h1>Quick Facts</h1>
+            <!-- list  -->
+            <table>
+              <!-- col -->
+              <tr>
+                <!-- row -->
+                <th>Language</th>
+                <th>Lua</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Tools</th>
+                <th>Love2D</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Team Size</th>
+                <th>5</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Is it Available?</th>
+                <th>Yes</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Started</th>
+                <th>March 7th, 2020</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Last Worked On</th>
+                <th>March 9th, 2020</th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- cover image -->
+          <img src="./Images/ClockworkMansionScreenshot.png" alt="An NPC walking down a hallway.">
+        </span>
+
+        <!-- tag line/brief desc. -->
+        <div class="project-discription">
+          <p>Try to prevent the world ending in a mansion that runs like clockwork.
+          My first time working in Lua and Love2D.</p>
+        </div>
+
+        <!-- Lonks -->
+        <div class="project-links">
+          <a href="https://notexplosive.itch.io/clockwork-mansion">Available on Itch.io</a>
+          <!--<a href="file/path/in/website">Read More</a>-->
+        </div>
+
+       </div>
+      <!-- LIGHT DOGGO -->
+      <div class="grid-item personal finished   coding  csharp     game        digital  game-jam unity 2d multiplayer released">
+        <!-- hidden parts, for computer -->
+        <div class="hidden">
+          <!-- date=year month day, so yyyymmdd -->
+          <p class="date-started">20180422</p>
+          <p class="date-worked">20180930</p>
           <p class="team-size">3</p>
         </div>
         <!-- end hidden -->
 
-        <h1>Example <Game></Game></h1>
+        <h1>Light Doggo</h1>
 
         <!-- table of quick facts -->
         <span class="row1">
@@ -104,7 +236,7 @@
               <tr>
                 <!-- row -->
                 <th>Tools</th>
-                <th>Unity</th>
+                <th>Unity 2D</th>
               </tr>
               <tr>
                 <!-- row -->
@@ -114,428 +246,764 @@
               <tr>
                 <!-- row -->
                 <th>Is it Available?</th>
-                <th>Yes.</th>
+                <th>Yes</th>
               </tr>
               <tr>
                 <!-- row -->
                 <th>Started</th>
-                <th>April 22, 2018</th>
+                <th>April 22nd, 2018</th>
               </tr>
               <tr>
                 <!-- row -->
                 <th>Last Worked On</th>
-                <th>September 30, 2018</th>
+                <th>September 30th, 2018</th>
               </tr>
             </table>
           </div>
 
           <!-- cover image -->
-          <img src="./Images/LightDoggo.bmp" alt="Girl in a jacket">
+          <img src="./Images/LightDoggo.bmp" alt="Girl in a jacket running after a ghost dog.">
         </span>
 
         <!-- tag line/brief desc. -->
         <div class="project-discription">
-          <p>test game info! yay.</p>
+          <p>
+            A one or two player local co-op game where your dead dog comes back to guide you through the underworld
+            after all the light has been stolen. I helped implement the dialogue system and controlls.
+          </p>
         </div>
 
         <!-- Lonks -->
         <div class="project-links">
-          <a href="lonk.com">lonk to desc/web page</a>
-          <a href="lonk.com">lonk to downloads</a>
-        </div>
-
-       </div>
-      <div class="grid-item grid-item--width2 blor">
-        <p class="date">20200614</p>
-        blargle
-      </div>
-      <div class="grid-item snar">
-        <p class="date">2018025</p>
-        snargle
-      </div>
-      <div class="grid-item snar">
-        <p class="date">20190101</p>
-        snarglac
-      </div>
-      <div class="grid-item horb">
-        <p class="date">20200106</p>
-        horby
-      </div>
-    </div>
-
-
-
-
-    <div class="ProjectList">
-      <div class="CodingProject">
-        <h1>Clockwork Mansion</h1>
-
-      <div class="inline-block">
-        <!-- title image -->
-        <img src="./Images/ClockworkMansionScreenshot.png" alt="Girl in a jacket">
-
-        <!-- info table -->
-        <div class="CodingProjectInfo">
-          <h1>Quick Facts</h1>
-          <!-- list  -->
-          <table>
-            <!-- col -->
-            <tr>
-              <!-- row -->
-              <th>Language</th>
-              <th>Lua</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Tools</th>
-              <th>Love2D</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Team Size</th>
-              <th>5</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Is it Available?</th>
-              <th>Yes.</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Started</th>
-              <th> March 7th 2020</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Last Worked On</th>
-              <th> March 9th 2020 </th>
-            </tr>
-          </table>
-        </div>
-
-        </div>
-
-      <!-- article content -->
-      <article>
-      <p>
-        This game was my first experince with Lua but was a ton of fun. NotExplosive was a huge help, introducing us to
-        mob programming (think paired programming but more people), and helped it turn out really nicely. The full team was me,
-        Elliot, Jo, Cullen, and NotExplosive.
-      </p>
-      <p>
-        In the game you wander a mansion and have to figure out how to save the world. The problem is that you don't know who's
-        trying to end the world, and who is just living their best life. It's supposed to take a few play throughs for you to start
-        to learn what everyone does and how it all fits together so that you can stop it.
-      </p>
-      </article>
-      <div class="MoreInfo">
-            <!-- TODO: <a href="./ClockworkMansion.html">Read More</a> -->
-            <a href="https://notexplosive.itch.io/clockwork-mansion">Itch Io Page</a>
-      </div>
-      </div>
-
-
-
-
-
-
-
-      <div class="CodingProject">
-      <h1>Light Doggo</h1>
-
-      <div class="inline-block">
-      <!-- title image -->
-      <img src="./Images/LightDoggo.bmp" alt="Girl in a jacket">
-
-      <!-- info table -->
-      <div class="CodingProjectInfo">
-        <h1>Quick Facts</h1>
-        <!-- list  -->
-        <table>
-          <!-- col -->
-          <tr>
-            <!-- row -->
-            <th>Language</th>
-            <th>C#</th>
-          </tr>
-          <tr>
-            <!-- row -->
-            <th>Tools</th>
-            <th>Unity</th>
-          </tr>
-          <tr>
-            <!-- row -->
-            <th>Team Size</th>
-            <th>3</th>
-          </tr>
-          <tr>
-            <!-- row -->
-            <th>Is it Available?</th>
-            <th>Yes.</th>
-          </tr>
-          <tr>
-            <!-- row -->
-            <th>Started</th>
-            <th>April 22, 2018</th>
-          </tr>
-          <tr>
-            <!-- row -->
-            <th>Last Worked On</th>
-            <th>September 30, 2018</th>
-          </tr>
-        </table>
-      </div>
-
-      </div>
-
-      <!-- article content -->
-      <article>
-      <p>
-      Light Doggo: Hades has stolen all the light from the world, but luckily your dead dog Spot has come to
-      guide you through the underworld to Hades palace to steal back the light.
-      This is a 2 player game, although it is playable as just 1 player, with partial controller support. One player
-      controlls spot and can shoot enemies while the other player has to make it through the world.
-      I worked on some of the Dialogue UI, and the controlls for the game.
-      </p>
-
-      </article>
-      <div class="MoreInfo">
           <a href="./LightDoggo.html">Read More</a>
-          <a href="https://noelwiz.itch.io/light-doggo">Itch Io Page</a>
-      </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="CodingProject">
-        <h1>DXM</h1>
-
-      <div class="inline-block">
-        <!-- title image -->
-        <img src="./Images/DXMartwork.png" alt="the game's title, dxm on a blue grid">
-
-        <!-- info table -->
-        <div class="CodingProjectInfo">
-          <h1>Quick Facts</h1>
-          <!-- list  -->
-          <table>
-            <!-- col -->
-            <tr>
-              <!-- row -->
-              <th>Language</th>
-              <th>C#</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Tools</th>
-              <th>Unity</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Team Size</th>
-              <th>2</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Is it Available?</th>
-              <th>Yes.</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Started</th>
-              <th>Feb 24, 2019</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Last Worked On</th>
-              <th>Feb 25, 2019</th>
-            </tr>
-          </table>
+          <a href="https://noelwiz.itch.io/light-doggo">Itch.io Page</a>
         </div>
 
+      </div>
+      <!-- DXM -->
+      <div class="grid-item personal unfinished coding  csharp     game        digital  game-jam unity 2d singleplayer released">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20190224</p>
+         <p class="date-worked">20190225</p>
+         <p class="team-size">2</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>DXM</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>C#</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Unity 2D</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>2</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>Yes.</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Finished?</th>
+               <th>No.</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>February 24th, 2019</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>February 25th, 2019</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- cover image -->
+         <img src="./Images/DXMartwork.png" alt="Stylized writing of 'dxm' the name of the game over a neon grid.">
+       </span>
+
+       <!-- tag line/brief desc. -->
+       <div class="project-discription">
+         <p>Testris but gravity periodically rotates. This game had difficulty with physics and collissions,
+         but is one I hope to return to and fix someday. I did all the programming while my partner did the art and music.</p>
+       </div>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <a href="./DXM.html">Read More</a>
+         <a href="https://noelwiz.itch.io/dxm">Itch.io Page</a>
+       </div>
+      </div>
+      <!-- GENDER CONSTRUCTOR -->
+      <div class="grid-item school   unfinished writing        game        physical game-jam multiplayer released">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20190526</p>
+         <p class="date-worked">20190603</p>
+         <p class="team-size">3</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Gender Constructor 2019</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Microsoft Excell</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>Yes</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Finished?</th>
+               <th>Almost</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>May 26th, 2019</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>June 3rd, 2019</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- cover image -->
+         <img src="./Images/GenderConstructorBanner.png" alt="The game's title, on a light gren background.">
+       </span>
+
+       <!-- tag line/brief desc. -->
+       <div class="project-discription">
+         <p>This game was made for my Intro to Queer Studies class, and is meant to show the idea that gender is
+         socially constructed by poking fun at gender norms. While the rules are finished, I need to finish the
+       cards and art so people can easily print it out and play it.</p>
+       </div>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <!-- TODO: <a href="./genderConstructor2019.html">Read More</a>-->
+         <a href="https://noelwiz.itch.io/gender-constructor-2019">Itch Io Page</a>
+       </div>
+
+      </div>
+      <!-- MEME ECONOMY BOT-->
+      <div class="grid-item personal unfinished coding  java   game github digital  game-jam multiplayer text-based released">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20200101</p>
+         <p class="date-worked">20200101</p>
+         <p class="team-size">3</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Meme Economy Bot</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1 no-image">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>Java</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th><a class="table-link" href="https://github.com/DV8FromTheWorld/JDA">Java Discord API</a></th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>Yes.</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>January 28th, 2018</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>October 29th, 2019</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- tag line/brief desc. -->
+         <div class="project-discription">
+           <p>
+             A text based stock market simulation game. Rather than a terminal, the chat program Discord is used
+             to interact with the game, so multiplayer is simple. The bot works, but is missing some features
+             I want to add before declaring it completed
+           </p>
+         </div>
+       </span>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <a href="./MemeEconomyBot.html">Read More</a>
+         <a href="https://noelwiz.itch.io/meme-economy-bot">Itch.io Page</a>
+         <a href="https://github.com/Noelwiz/MemeEconomyBot">GitHub Page</a>
+       </div>
+      </div>
+      <!-- Skyrhymes A RAP BATTLE RPG-->
+      <div class="grid-item personal finished   coding  csharp     game        digital  game-jam unity 2d singleplayer released">
+       <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20181022</p>
+         <p class="date-worked">20200427</p>
+         <p class="team-size">4</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Skyrhymes: A Rap Battle RPG</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>C#</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Unity 2D</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>4</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>Yes</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Finished?</th>
+               <th>Yes</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>October 22nd, 2018</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>April 27th, 2020</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- cover image -->
+         <img src="./Images/skyrhymes_title_screen.png" alt="Todd Howard enshrowded in mist">
+       </span>
+
+       <!-- tag line/brief desc. -->
+       <div class="project-discription">
+         <p>This is a rhyming game with an attempt at synching audio and game events. It's complete but the systems need
+         to be debugged. I want to take a second pass at this using FMOD or some other audio middleware to make it work better.</p>
+       </div>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <!--TODO: make page<a href="path/to/page.html">Read More</a> -->
+         <a href="https://noisemaker2.itch.io/skyrhymes-a-rap-battle-rpg">Itch.io page</a>
+       </div>
+      </div>
+      <!-- WORLD BUILDING -->
+      <div class="grid-item personal unfinished writing world digital released ">
+        <!-- hidden parts, for computer -->
+        <div class="hidden">
+          <!-- date=year month day, so yyyymmdd -->
+          <p class="date-started">20200101</p>
+          <p class="date-worked">20180601</p>
+          <p class="team-size">1</p>
         </div>
+        <!-- end hidden -->
 
-      <!-- article content -->
-      <article>
-      <p>
-        Think of tetris, now imagine what it would be like if gravity rotated periodically, and the blocks were only 3 squares.
-        That is DXM. This one was a bit tough writing our own physics system and collissions to keep the nice grid look. I
-        somewhat succeeded but it needs some work before it's really good.
-        I think both me and Vae I worked with want to fix and get this game to a playable state in the future. I did the
-        coding, while Vae  did the music and art for the game.
-      </p>
+        <h1>Sindovanya Andevarlon</h1>
 
-      </article>
-      <div class="MoreInfo">
-            <a href="./DXM.html">Read More</a>
-            <a href="https://noelwiz.itch.io/dxm">Itch Io Page</a>
-      </div>
-      </div>
+        <!-- table of quick facts -->
+        <span class="row1 no-image">
+          <div class="info-table">
+            <h1>Quick Facts</h1>
+            <!-- list  -->
+            <table>
+              <!-- col -->
+              <tr>
+                <!-- row -->
+                <th>Tools</th>
+                <th><a class="table-link" href="https://www.worldanvil.com/">World Anvil</a></th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Team Size</th>
+                <th>Just me</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Started</th>
+                <th>Summer, 2018</th>
+              </tr>
+              <tr>
+                <!-- row -->
+                <th>Last Worked On</th>
+                <th>February 2nd, 2020</th>
+              </tr>
+            </table>
+          </div>
 
 
+          <!-- tag line/brief desc. -->
+          <div>
+            <p  class="project-discription">
+              Some world building I've done. The general idea is to play with a world with binary terrestrial planets.
+              So, there's two earth like planets with life orbiting eachother, based off of this <a href="https://phys.org/news/2014-12-binary-terrestrial-planets.html">article</a>.
+            </p>
+          </div>
+        </span>
 
-
-
-
-
-
-
-
-      <div class="CodingProject">
-        <h1>Gender Constructor 2019</h1>
-
-      <div class="inline-block">
-        <!-- title image -->
-        <img src="./Images/GenderConstructorBanner.png" alt="the game's title, dxm on a blue grid">
-
-        <!-- info table -->
-        <div class="CodingProjectInfo">
-          <h1>Quick Facts</h1>
-          <!-- list  -->
-          <table>
-            <!-- col -->
-            <tr>
-              <!-- row -->
-              <th>Language</th>
-              <th>English</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Tools</th>
-              <th>Excell</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Team Size</th>
-              <th>Me</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Is it Available?</th>
-              <th>Yes.</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Started</th>
-              <th>May 26, 2019</th>
-            </tr>
-            <tr>
-              <!-- row -->
-              <th>Last Worked On</th>
-              <th>Jun 03, 2019</th>
-            </tr>
-          </table>
+        <!-- Lonks -->
+        <div class="project-links">
+          <a href="Worlds.html">Read More</a>
+          <a href="https://www.worldanvil.com/w/sindovanya-andevarlon-noelwiz">World Anvil Page</a>
         </div>
+       </div>
+      <!-- Planet Generator -->
+      <div class="grid-item personal unfinished coding  python tool github digital text-based">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20180614</p>
+         <p class="date-worked">20181009</p>
+         <p class="team-size">1</p>
+       </div>
+       <!-- end hidden -->
 
-        </div>
+       <h1>Planet Generator</h1>
 
-      <!-- article content -->
-      <article>
-      <p>
-        This was my first physical game I worked on. For my intr to queer studies class, the final project was
-        open ended, so I decided to double dip and make this for the jam and my final project. I think it could use
-        a little bit of art and card discriptions to make everything look good but I had fun making it. My main goal
-        was to try and show how gender is socially constructed with humor, while making a fun game.
-      </p>
+       <!-- table of quick facts -->
+       <span class="row1 no-image">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>Python</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>No.</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>June 14th, 2018</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>October 9th, 2018</th>
+             </tr>
+           </table>
+         </div>
 
-      </article>
-      <div class="MoreInfo">
-            <!-- TODO: <a href="./genderConstructor2019.html">Read More</a>-->
-            <a href="https://noelwiz.itch.io/gender-constructor-2019">Itch Io Page</a>
+         <!-- tag line/brief desc. -->
+         <div class="project-discription">
+           <p>
+             A generator to make physically plausable planets for world building. The general idea is
+             to math out plausable characteristics of a planet like it's orbat, metallic composition,
+             and other stuff about a solar system to speed up early world building math.
+           </p>
+         </div>
+       </span>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <a href="./PlanetGenerator.html">Read More</a>
+         <a href="https://github.com/Noelwiz/SpaceGenerator">GitHub Page</a>
+       </div>
       </div>
+      <!-- REGIONALISMS -->
+      <div class="grid-item School   unfinished coding  python tool github digital text-based">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20200601</p>
+         <p class="date-worked">20200611</p>
+         <p class="team-size">1</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Detecting Regionalisms in Subreddits</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1 no-image">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>Python</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>Yes</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>June 1st, 2020</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>June 11th 2020</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- tag line/brief desc. -->
+         <div class="project-discription">
+           <p>
+             This is a set of scripts to try to detect regionalisms in reddit posts and comments. It's functional
+             but not really useful, and needs to be cleaned up and improved before it's done.
+           </p>
+         </div>
+       </span>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <!-- TODO: make a page for this <a href="./PlanetGenerator.html">Read More</a> -->
+         <a href="https://github.com/Noelwiz/RegionalismsOnReddit">GitHub Page</a>
+       </div>
       </div>
+      <!-- MERCHANTS -->
+      <div class="grid-item personal unfinished coding  csharp    game        digital unity 2d singleplayer">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20180601</p> <!-- todo: find actual date started -->
+         <p class="date-worked">20200101</p>
+         <p class="team-size">1</p>
+       </div>
+       <!-- end hidden -->
 
+       <h1>Merchants of Klocios</h1>
 
+       <!-- table of quick facts -->
+       <span class="row1 no-image">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Unity 2D</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>C#</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>No</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>2018</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>January 2020</th>
+             </tr>
+           </table>
+         </div>
 
+         <!-- tag line/brief desc. -->
+         <div class="project-discription">
+           <p>
+             An rpg where you're a traveling merchant. I'm hoping to loosely simulate the economy and
+             use this game to explore the world I've been building.
+           </p>
+         </div>
+       </span>
 
-
-
-
-
-
-
-
-
-
-      <div class="CodingProject">
-        <h1>Meme Economy Bot</h1>
-      <!-- article content -->
-      <article>
-      <p>
-        This Discord bot is basically a silly stock market simulator. I wrote the bulk of the origional code in 36 hours,
-        and won best presentation at that game jam and have since occasionally added more to this.
-        Currently the bot works well, but there isn't much interactions between players. I hope to implment some way of allowing
-        people to customize the stocks, as well as providing some basic sets of things for people to use as stocks like musical
-        instruments.
-      </p>
-
-      </article>
-    <!-- info table -->
-              <h2>Quick Facts</h2>
-              <!-- list  -->
-              <table>
-                <!-- col -->
-                <tr>
-                  <!-- row -->
-                  <th>Language</th>
-                  <th>Java</th>
-                </tr>
-                <tr>
-                  <!-- row -->
-                  <th>Tools</th>
-                  <th><a href="https://github.com/DV8FromTheWorld/JDA">JDA</a></th>
-                </tr>
-                <tr>
-                  <!-- row -->
-                  <th>Team Size</th>
-                  <th>Me</th>
-                </tr>
-                <tr>
-                  <!-- row -->
-                  <th>Is it Available?</th>
-                  <th>Yes.</th>
-                </tr>
-                <tr>
-                  <!-- row -->
-                  <th>Started</th>
-                  <th>Jan 28th, 2018</th>
-                </tr>
-                <tr>
-                  <!-- row -->
-                  <th>Last Worked On</th>
-                  <th>Oct 29th, 2019</th>
-                </tr>
-              </table>
-
-      <div class="MoreInfo">
-            <a href="./MemeEconomyBot.html">Read More</a>
-            <a href="https://noelwiz.itch.io/meme-economy-bot">Itch Io Page</a>
-            <a href="https://github.com/Noelwiz/MemeEconomyBot">github Page</a>
+       <!-- Lonks -->
+       <div class="project-links">
+         <a href="./Merchants_of_Klocios.html">Read More</a>
+       </div>
       </div>
+      <!-- Maze bot -->
+      <!-- TODO: this -->
+      <!-- Summers Horizen OST -->
+      <!-- TODO: this -->
+      <!-- String Theory OST -->
+      <!-- TODO: this -->
+      <!-- BEETMAN: OKRARINA OF THYME OST -->
+      <!-- TODO: THIS -->
+      <!-- Plight of the gerbil King OST -->
+      <!-- TODO: THIS -->
+      <!-- SCHLIRBIE OST -->
+      <!-- TODO: THIS -->
+      <!-- UNITY MAP GENERATOR -->
+      <!-- TODO: THIS -->
+      <!-- NEON RACER -->
+      <div class="grid-item personal unfinished coding  csharp     game        digital unity 3d singleplayer">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20200328</p> <!-- todo: find actual date started -->
+         <p class="date-worked">20200401</p>
+         <p class="team-size">1</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Neon Racer</h1>
+
+       <!-- table of quick facts -->
+       <span class="row1">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Unity 3D</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>C#</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>No</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>March 2020</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>April 2020</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- cover image -->
+         <img src="./Images/NeonRacerCubeJumping.png" alt="A Neon cube with trailing light jumping.">
+       </span>
+
+       <!-- tag line/brief desc. -->
+       <div class="project-discription">
+         <p>
+           Using Unity's HDRP for ray tracing, this is a racing game with a neon aesthetic.
+         </p>
+       </div>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <p>Links are coming soon.</p>
+         <!-- <a href="./Merchants_of_Klocios.html">Read More</a> -->
+       </div>
       </div>
+      <!-- TODO: THIS -->
+      <!-- FANTASKTIC -->
+      <!-- TODO: THIS -->
+      <!-- deadwood -->
+      <!-- TODO: THIS -->
+      <!-- SOLAR POLAR BEAR PEOPLE -->
+      <!-- TODO: THIS -->
+      <!-- MINECRAFT - bridge and house -->
+      <div class="grid-item personal 3d unfinished digital level-design minecraft art">
+        <!-- hidden parts, for computer -->
+       <div class="hidden">
+         <!-- date=year month day, so yyyymmdd -->
+         <p class="date-started">20200328</p> <!-- todo: find actual date started -->
+         <p class="date-worked">20200614</p>
+         <p class="team-size">1</p>
+       </div>
+       <!-- end hidden -->
+
+       <h1>Minecraft Enviorment Design</h1>
+       <h2>(AKA Building Some Pretty Enviorments)</h2>
+
+       <!-- table of quick facts -->
+       <span class="row1">
+         <div class="info-table">
+           <h1>Quick Facts</h1>
+           <!-- list  -->
+           <table>
+             <!-- col -->
+             <tr>
+               <!-- row -->
+               <th>Tools</th>
+               <th>Unity 3D</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Language</th>
+               <th>C#</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Team Size</th>
+               <th>Just Me</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Is it Available?</th>
+               <th>No</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Started</th>
+               <th>March 2020</th>
+             </tr>
+             <tr>
+               <!-- row -->
+               <th>Last Worked On</th>
+               <th>April 2020</th>
+             </tr>
+           </table>
+         </div>
+
+         <!-- cover image -->
+         <img src="./Images/bridge_side_sunrise.png" alt="A Bridge with the sun rising behind it in MINECRAFT.">
+       </span>
+
+       <!-- tag line/brief desc. -->
+       <div class="project-discription">
+         <p>
+           Doing some level building in minecraft around my house, in particular paying attention to the tarrain,
+           vegitation, and path design. I'm planning on making an image gallery once it's more complete. Shaders - Sonic
+           Eithers Path Tracing Shader r12, texture pack - better faithful 1.15.
+         </p>
+       </div>
+
+       <!-- Lonks -->
+       <div class="project-links">
+         <p>Links are coming soon.</p>
+         <!-- <a href="./Merchants_of_Klocios.html">Read More</a> -->
+       </div>
+      </div>
+      <!-- MINECRAFT MAZE -->
+      <!-- TODO: this -->
 
 
 
 
-    <div></div>
+    <!-- end grid -->
+    </div>
+    <!-- end grid -->
+
+<!-- TODO: fix
     <h3>Social Media</h3>
     <p>
       Sound Cloud: <a href="https://soundcloud.com/noelwiz-peter">Noelwiz</a> Most of my music.
       Itch.io: <a href="https://noelwiz.itch.io/">Noelwiz</a> Games I've worked on and uploaded.
       Also other stuff I've worked on <a href="https://itch.io/c/410903/other-games-ive-worked-on">are listed here</a>.
     </p>
+  -->
   </body>
+  <script src="./JS/ProjectList.js"></script>
 </html>
