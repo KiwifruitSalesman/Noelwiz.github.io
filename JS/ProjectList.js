@@ -6,12 +6,6 @@ var $grid = $('.grid').isotope({
   sortBy: ['datecreate', 'dateworked'],
   sortAscending: false,
   layoutMode: 'fitRows',
-  //masonry: {
-    // use outer width of grid-sizer for columnWidth
-    //columnWidth: '.grid-sizer'
-  //},
-
-  //TODO: adjust
   getSortData: {
     datecreate: function( itemElem ) {
       var date = $( itemElem ).find('.hidden').find('.date-started').text();
