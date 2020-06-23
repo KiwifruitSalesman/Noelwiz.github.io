@@ -3,11 +3,13 @@
 var $grid = $('.grid').isotope({
   // options
   itemSelector: '.grid-item',
-  display: 'contents',
-  width: '60%',
-  height: 'auto',
   sortBy: ['datecreate', 'dateworked'],
   sortAscending: false,
+  layoutMode: 'fitRows',
+  //masonry: {
+    // use outer width of grid-sizer for columnWidth
+    //columnWidth: '.grid-sizer'
+  //},
 
   //TODO: adjust
   getSortData: {

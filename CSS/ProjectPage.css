@@ -1,8 +1,5 @@
 .grid{
-  width: 100%
-  height: 80%
-  display: contents;
-  height: auto;
+  width: 100%;
 }
 
 .row1{
@@ -32,24 +29,20 @@
 }
 
 .grid-item img {
-  display: contents;
  position: unset;
- width: 60%;
+ width: 31%;
  height: auto;
  vertical-align: bottom;
  /* title image */
  border: 2px solid #ddd;
  margin: 0% 1%;
- display: inline-block;
-}
 
+}
 
 .grid-item{
   border-style: solid;
   border-color: #123455;
-  height: 60%;
-  width: 35%;
-  display: contents;
+  width: 32%;
 }
 
 .hidden{
@@ -131,7 +124,6 @@ p.project-discription > a:link{
 body{
   word-wrap: normal;
   padding: 5px 5px;
-  display:inline-block;
   vertical-align: top;
 }
 
