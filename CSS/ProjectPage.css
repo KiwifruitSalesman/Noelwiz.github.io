@@ -31,12 +31,13 @@
 .grid-item img {
  position: unset;
  width: 63%;
+ max-width: 64%;
  height: auto;
  vertical-align: bottom;
  /* title image */
  border: 2px solid #ddd;
  margin: 0% 1%;
-
+ overflow: hidden;
 }
 
 .grid-item{
